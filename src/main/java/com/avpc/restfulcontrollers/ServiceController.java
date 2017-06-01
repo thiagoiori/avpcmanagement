@@ -5,7 +5,6 @@ import com.avpc.model.Service;
 import com.avpc.model.dao.MemberDAO;
 import com.avpc.model.dao.ServiceDAO;
 import com.avpc.restfulcontrollers.dto.ServiceDTO;
-import com.sun.javaws.exceptions.InvalidArgumentException;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
