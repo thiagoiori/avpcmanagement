@@ -74,6 +74,9 @@ public class MemberController {
                 member.setSurname2(memberParams.getSurname2());
                 member.setUserGroup(memberParams.getUserGroup());
                 member.setDni(memberParams.getDni());
+                member.setLatitude(memberParams.getLatitude());
+                member.setLongitude(memberParams.getLongitude());
+                member.setPhotoURL(memberParams.getPhotoURL());
 
                 memberDAO.save(member);
             } catch (IllegalArgumentException e) {
@@ -153,6 +156,9 @@ public class MemberController {
                 member.setPostalCode(memberParams.getPostalCode());
                 member.setUserGroup(memberParams.getUserGroup());
                 member.setDni(memberParams.getDni());
+                member.setLatitude(memberParams.getLatitude());
+                member.setLongitude(memberParams.getLongitude());
+                member.setPhotoURL(memberParams.getPhotoURL());
 
                 memberDAO.save(member);
 
