@@ -175,7 +175,7 @@ public class MemberController {
     }
 
     @RequestMapping(value ="/{memberId}/location", method = RequestMethod.PUT)
-    public void updateMemberLocation(@PathVariable(value="memberId") Long memberId, @RequestBody MemberDTO memberParams, HttpServletRequest request, HttpServletResponse response) throws IOException {
+    public Member updateMemberLocation(@PathVariable(value="memberId") Long memberId, @RequestBody MemberDTO memberParams, HttpServletRequest request, HttpServletResponse response) throws IOException {
 
         Member member = null;
 
@@ -196,6 +196,8 @@ public class MemberController {
         else {
             response.sendError(HttpStatus.UNAUTHORIZED.value());
         }
+        
+        return member;
     }
 
     @RequestMapping(value ="/{memberId}/availability", method = RequestMethod.PUT)
